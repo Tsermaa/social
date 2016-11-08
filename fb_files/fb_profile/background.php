@@ -166,26 +166,26 @@ if(isset($_POST['file2']) && ($_POST['file2']=='Upload'))
         <a href="Profile.php"> <img src="img/timeline.png" width="16" height="16" onMouseOver="head_timeline_over()" onMouseOut="head_timeline_out()"></a>
         </div>
         <div style="position:fixed; left:88%; top:5%; z-index:3;">
-                 <a href="Profile.php" style="text-decoration:none; color:#000;" id="head_timeline" onMouseOver="head_timeline_over()" onMouseOut="head_timeline_out()" ><h4>Timeline</h4></a> 
+                 <a href="Profile.php" style="text-decoration:none; color:#000;" id="head_timeline" onMouseOver="head_timeline_over()" onMouseOut="head_timeline_out()" ><h4>Мэдээлэл</h4></a> 
         </div>
         <div style="position:fixed; left:86%; top:13.5%; z-index:3;">
              <a href="about.php"> <img src="img/about.png" onMouseOver="head_about_over()" onMouseOut="head_about_out()"> </a>
         </div> 
         <div style="position:fixed; left:88%; top:10%; z-index:3;">
-                <a href="about.php" style="text-decoration:none; color:#000;" id="head_about" onMouseOver="head_about_over()" onMouseOut="head_about_out()"><h4>About</h4></a> 
+                <a href="about.php" style="text-decoration:none; color:#000;" id="head_about" onMouseOver="head_about_over()" onMouseOut="head_about_out()"><h4>Тухай</h4></a> 
         </div>
         
         <div style="position:fixed; left:85.8%; top:18%; z-index:3;"> <a href="photos.php"> <img src="img/photo&video.PNG" onMouseOver="head_photos_over()" onMouseOut="head_photos_out()"> </a> </div>
 <div style="position:fixed; left:88.2%; top:15%; z-index:3;"><a href="photos.php" style="text-decoration:none; color:#000;" id="head_photos" onMouseOver="head_photos_over()" onMouseOut="head_photos_out()"><h4>Photos</h4></a></div>
 
 	<div style="position:fixed; left:85.8%; top:23%; z-index:3;"> <a href="../fb_home/Settings.php"> <img src="img/settings2.png" height="25" width="23" onMouseOver="head_settings_over()" onMouseOut="head_settings_out()"> </a> </div>
-<div style="position:fixed; left:88.2%; top:20%; z-index:3;"><a href="../fb_home/Settings.php" style="text-decoration:none; color:#000;" id="head_settings" onMouseOver="head_settings_over()" onMouseOut="head_settings_out()"><h4> Account Settings </h4></a></div>
+<div style="position:fixed; left:88.2%; top:20%; z-index:3;"><a href="../fb_home/Settings.php" style="text-decoration:none; color:#000;" id="head_settings" onMouseOver="head_settings_over()" onMouseOut="head_settings_out()"><h4> Хэрэглэгчийн тохиргоо </h4></a></div>
 
 <div style="position:fixed; left:86.1%; top:27.5%; z-index:3;"> <a href="../fb_home/feedback.php"> <img src="background_file/background_icons/icon-feedback.png" height="20" width="20" onMouseOver="head_feedback_over()" onMouseOut="head_feedback_out()"> </a> </div>
 <div style="position:fixed; left:88.3%; top:24.5%; z-index:3;"><a href="../fb_home/feedback.php" style="text-decoration:none; color:#000;" id="head_feedback" onMouseOver="head_feedback_over()" onMouseOut="head_feedback_out()"><h4> Feedback </h4></a></div>
 
 <div style="position:fixed; left:86%; top:32.5%; z-index:3;"> <a href="../fb_logout/logout.php"> <img src="background_file/background_icons/logout.png" height="20" width="20" onMouseOver="head_logout_over()" onMouseOut="head_logout_out()"> </a> </div>
-<div style="position:fixed; left:88.3%; top:29.1%; z-index:3;"><a href="../fb_logout/logout.php" style="text-decoration:none; color:#000;" id="head_logout" onMouseOver="head_logout_over()" onMouseOut="head_logout_out()"><h4> Logout </h4></a></div>
+<div style="position:fixed; left:88.3%; top:29.1%; z-index:3;"><a href="../fb_logout/logout.php" style="text-decoration:none; color:#000;" id="head_logout" onMouseOver="head_logout_over()" onMouseOut="head_logout_out()"><h4> Гарах </h4></a></div>
 </div>
 		
 <!--left hr-->

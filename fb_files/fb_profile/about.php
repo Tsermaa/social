@@ -97,7 +97,7 @@
 	
        
  <!--Work and education--> 
- <div style="position:absolute;left:17%;top:85%;"> <h3> Work and education </h3> </div>
+ <div style="position:absolute;left:17%;top:85%;"> <h3> Ажил болон боловсрол </h3> </div>
 
 <div id="work_static" onClick="work_static_hide()">   
 <div style="position:absolute;left:19%;top:97%;"> <img src="img/job.PNG"> </div>
@@ -113,7 +113,7 @@
 	else
 	{
 ?>
-		<div style="position:absolute;left:26%;top:101%; color:#3B59A4; font-weight:bold; "> Add a job </div>
+		<div style="position:absolute;left:26%;top:101%; color:#3B59A4; font-weight:bold; "> Ажил нэмэх </div>
 <?php	
     }
 ?>
@@ -128,7 +128,7 @@
 	else
 	{
 ?>
-		<div style="position:absolute;left:26%;top:119%; color:#3B59A4; font-weight:bold;"> Add a school or college </div>
+		<div style="position:absolute;left:26%;top:119%; color:#3B59A4; font-weight:bold;"> Сургууль нэмэх </div>
 <?php
 	}
 ?>
@@ -138,9 +138,9 @@
 </div>
 
 <form method="post" style="display:none"  id="Work_form">
-<div style="position:absolute;left:19%;top:94%;color:#3B59A4;"> Job </div>
+<div style="position:absolute;left:19%;top:94%;color:#3B59A4;"> Ажил </div>
 <div style="position:absolute;left:19%;top:98.5%;"> <input type="text" value="<?php echo $job; ?>" name="job" style="height:33;width:350;font-size:16px;" maxlength="35"> </div>
-<div style="position:absolute;left:19%;top:108%;color:#3B59A4;"> School or College </div>
+<div style="position:absolute;left:19%;top:108%;color:#3B59A4;"> Сургууль </div>
 <div style="position:absolute;left:19%;top:112.5%;"> <input type="text" value="<?php echo $school_or_collage; ?>" name="edu" maxlength="35" style="height:33;width:350;font-size:16px;"> </div>
 
 <div style="position:absolute;left:24%;top:122%;"> <input type="submit" value="Save" name="work_sub" class="save_button" > </div>
@@ -169,7 +169,7 @@
 	else
 	{
 ?>
-		<div style="position:absolute;left:60%;top:101%; color:#3B59A4; font-weight:bold;"> Add Your Current City </div>
+		<div style="position:absolute;left:60%;top:101%; color:#3B59A4; font-weight:bold;"> Хот нэмэх </div>
 <?php
 	}	
 ?>
@@ -185,7 +185,7 @@
 	else
 	{
 ?>
-		<div style="position:absolute;left:60%;top:119%; color:#3B59A4; font-weight:bold;"> Add your hometown </div>
+		<div style="position:absolute;left:60%;top:119%; color:#3B59A4; font-weight:bold;"> Гэрийн хаяг нэмэх </div>
 <?php
 	}
 ?>
@@ -195,9 +195,9 @@
 </div>
 
 <form method="post" style="display:none" id="Living_form">
-<div style="position:absolute;left:53%;top:94%;color:#3B59A4;"> Current City </div>
+<div style="position:absolute;left:53%;top:94%;color:#3B59A4;"> Одоогийн хаяг </div>
 <div style="position:absolute;left:53%;top:98.5%;"> <input type="text" value="<?php echo $city; ?>" name="city" style="height:33;width:350;font-size:16px;" onKeyPress="return isStringKey(event)" maxlength="15"> </div>
-<div style="position:absolute;left:53%;top:108%;color:#3B59A4;"> hometown </div>
+<div style="position:absolute;left:53%;top:108%;color:#3B59A4;"> Хаяг </div>
 <div style="position:absolute;left:53%;top:112.5%;"> <input type="text" value="<?php echo $hometown; ?>" name="hometown" onKeyPress="return isStringKey(event)" maxlength="15" style="height:33;width:350;font-size:16px;"> </div>
 
 <div style="position:absolute;left:59%;top:122%;"> <input type="submit" value="Save" name="leving_sub" class="save_button"> </div>
@@ -217,18 +217,18 @@
 	$Emial_id=$user_data[2];
 ?>
 
- <div style="position:absolute;left:17%;top:145%;"> <h3> Basic Information </h3> </div>
+ <div style="position:absolute;left:17%;top:145%;"> <h3> Хувийн мэдээлэл </h3> </div>
  
 <div id="basic_static" onClick="basic_static_hide()"> 
 
- <div style="position:absolute;left:19%;top:156%; font-size:18px; color:#89919C;"> Birthday </div>
+ <div style="position:absolute;left:19%;top:156%; font-size:18px; color:#89919C;"> Төрсөн өдөр </div>
  <div style="position:absolute;left:25%;top:156%; font-size:18px;"> <?php echo $bday; ?> </div>
 
-<div style="position:absolute;left:19%; top:163%; font-size:18px; color:#89919C;">Gender</div>
+<div style="position:absolute;left:19%; top:163%; font-size:18px; color:#89919C;">Хүйс</div>
 <div style="position:absolute;left:25%;top:163%; font-size:18px;"> <?php echo $gender; ?> </div>
 
 
-<div style="position:absolute;left:19%; top:169%; font-size:18px; color:#89919C;">Relationship </div>
+<div style="position:absolute;left:19%; top:169%; font-size:18px; color:#89919C;">Харилцаа </div>
 <?php
 	$relationship=$user_info_data[5];
 	if($relationship!="")
@@ -240,7 +240,7 @@
 	else
 	{
 ?>
-		<div style="position:absolute;left:27%;top:169.5%; color:#3B59A4; font-weight:bold;"> Add Relationship </div>
+		<div style="position:absolute;left:27%;top:169.5%; color:#3B59A4; font-weight:bold;"> Харилцаа нэмэх </div>
 <?php
 	}
 ?>
@@ -248,12 +248,12 @@
 </div>
 
 <form method="post" style="display:none" id="basic_form">
-<div style="position:absolute;left:19%;top:156%; font-size:18px; color:#89919C;"> Birthday </div>
+<div style="position:absolute;left:19%;top:156%; font-size:18px; color:#89919C;"> Төрсөн өдөр </div>
 
 
 <div style="position:absolute; left:25%; top:155.7%;">
 	<select name="day" style="width:61;font-size:15px;height:29;padding:3;">
-	<option value="Day:"> Day: </option>
+	<option value="Day:"> Өдөр: </option>
 	
 	<script type="text/javascript">
 	
@@ -269,7 +269,7 @@
     
     <div style="position:absolute;left:30%; top:155.7%;">
 	<select name="month" style="width:78;font-size:15px;height:29;padding:3;">
-	<option value="Month:"> Month: </option>
+	<option value="Month:"> Сар: </option>
 	
 	<script type="text/javascript">
 	
@@ -286,7 +286,7 @@
     
     <div style='position:absolute;left:36.3%;top:155.7%;'>
 	<select name="year" style="width:66; font-size:15px; height:29; padding:3;">
-	<option value="Year:"> Year: </option>
+	<option value="Year:"> Жил: </option>
 	
 	<script type="text/javascript">
 	
@@ -300,10 +300,10 @@
 	</select>
 	</div>		
     
-    <div style="position:absolute;left:19%; top:163%; font-size:18px; color:#89919C;">Gender</div>
+    <div style="position:absolute;left:19%; top:163%; font-size:18px; color:#89919C;">Хүйс</div>
 <div style="position:absolute;left:25%;top:163%; font-size:18px;"> <?php echo $gender; ?> </div>
 
-<div style="position:absolute;left:19%; top:169%; font-size:18px; color:#89919C;">Relationship </div>
+<div style="position:absolute;left:19%; top:169%; font-size:18px; color:#89919C;">Харилцаа </div>
 
 
 <div style="position:absolute;left:27%; top:169%;">
@@ -332,10 +332,10 @@
 
 <!--Contact Information--> 
 
-<div style="position:absolute;left:51%;top:145%;"> <h3> Contact Information </h3> </div>
+<div style="position:absolute;left:51%;top:145%;"> <h3> Холбоо барих мэдээлэл </h3> </div>
 
 <div id="contact_static" onClick="contact_static_hide()">
-<div style="position:absolute;left:53%;top:156%; font-size:18px; color:#89919C;"> Mobile Phones </div>
+<div style="position:absolute;left:53%;top:156%; font-size:18px; color:#89919C;"> Утасны дугаар </div>
 <?php
 	$m_no=$user_info_data[6];
 	if($m_no!=0)
@@ -355,16 +355,16 @@
 	else
 	{
 ?>
-		<div style="position:absolute;left:62%;top:156.4%; color:#3B59A4; font-weight:bold;"> Add Mobile Number </div>
+		<div style="position:absolute;left:62%;top:156.4%; color:#3B59A4; font-weight:bold;"> Утасны дугаар нэмэх </div>
 		
 <?php
 	}
 ?>
 
-<div style="position:absolute;left:53%; top:162%; font-size:18px; color:#89919C;">Email</div>
+<div style="position:absolute;left:53%; top:162%; font-size:18px; color:#89919C;">Мэйл</div>
 
 <div style="position:absolute;left:58%;top:162%; font-size:18px;"> <?php echo $Emial_id; ?> </div>
-   <div style="position:absolute;left:53%; top:169%; font-size:18px; color:#89919C;">Website</div>
+   <div style="position:absolute;left:53%; top:169%; font-size:18px; color:#89919C;">Вэб хуудас</div>
   
 <?php
 	$web=$user_info_data[8];
@@ -377,12 +377,12 @@
 	else
 	{
 ?>
-		<div style="position:absolute;left:59%;top:169%; color:#3B59A4; font-weight:bold;"> Add Website </div>
+		<div style="position:absolute;left:59%;top:169%; color:#3B59A4; font-weight:bold;"> Вэб хуудас нэмэх </div>
 <?php
 	}
 ?> 
 
-<div style="position:absolute;left:53%; top:175%; font-size:18px; color:#89919C;">Facebook ID </div>
+<div style="position:absolute;left:53%; top:175%; font-size:18px; color:#89919C;">Facebook хаяг </div>
 
 <?php
 	$fb_id=$user_info_data[9];
@@ -396,7 +396,7 @@
 	else
 	{
 ?>
-		<div style="position:absolute;left:61%;top:175%; color:#3B59A4; font-weight:bold;"> Add Facebook ID </div>
+		<div style="position:absolute;left:61%;top:175%; color:#3B59A4; font-weight:bold;"> Facebook хаяг нэмэх </div>
 <?php
 	}
 ?> 
@@ -405,23 +405,23 @@
 </div>
 
 <form method="post" style="display:none" name="contact" id="contact_form" onSubmit="return contact_check()">
-<div style="position:absolute;left:53%;top:156%; font-size:18px; color:#89919C;"> Mobile Phones </div>
+<div style="position:absolute;left:53%;top:156%; font-size:18px; color:#89919C;"> Утасны дугаар </div>
 <div style="position:absolute;left:62%;top:155.4%;"> <input type="text" value="<?php echo $m_no; ?>" name="mno" onKeyPress="return isNumberKey(event)" style="height:33;width:150;font-size:16px;" maxlength="10"> </div>
 
 <div style="position:absolute;left:74%;top:155.4%;">
 	<select style="height:33;font-size:19px;" name="priority">
-    	<option value="Private"> Only me </option>  
-		<option value="Public"> Public </option> 
+    	<option value="Private"> Зөвхөн надад </option>  
+		<option value="Public"> Нийтэд </option> 
 	</select>
 </div>
 
-<div style="position:absolute;left:53%; top:162%; font-size:18px; color:#89919C;">Email</div>
+<div style="position:absolute;left:53%; top:162%; font-size:18px; color:#89919C;">Мэйл хаяг</div>
 
 <div style="position:absolute;left:61%;top:161.6%; font-size:18px;"> <input type="text" value="<?php echo $Emial_id; ?>" style="height:33; width:300; color:#000; font-size:16px; "  disabled></div>
     
-  <div style="position:absolute;left:53%; top:169%; font-size:18px; color:#89919C;">Website</div>
+  <div style="position:absolute;left:53%; top:169%; font-size:18px; color:#89919C;">Вэб хуудас</div>
 <div style="position:absolute;left:61%;top:168%;"> <input type="text" value="<?php echo $web; ?>" name="web" maxlength="40" style="height:33;width:300;font-size:16px;"> </div>
-<div style="position:absolute;left:53%; top:175%; font-size:18px; color:#89919C;">Facebook ID </div>
+<div style="position:absolute;left:53%; top:175%; font-size:18px; color:#89919C;">Facebook хаяг </div>
 <div style="position:absolute;left:61%;top:174.4%;"> <input type="text" value="<?php echo $fb_id; ?>" name="fbid" maxlength="40" style="height:33;width:300;font-size:16px;"> </div>
 
 <div style="position:absolute;left:59%;top:185%;"> <input type="submit" value="Save" name="contact_sub" class="save_button"> </div>
