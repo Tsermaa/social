@@ -105,7 +105,7 @@ if(isset($_POST['file2']) && ($_POST['file2']=='Upload'))
 <body id="body">
 
 <!--Head background-->
-<div style="position:fixed;left:0;top:0; height:6%; width:100%; z-index:2; background:#3B5998">   </div>
+<div style="position:fixed;left:0;top:0; height:6%; width:100%; z-index:2; background:#FF1493">   </div>
 <!--Head fb text-->
 <div style="position:fixed;left:4.05%;top:0.8%;font-size:25;font-weight:900; z-index:3;"> <a href="../fb_home/Home.php" style="color:#FFFFFF; text-decoration:none;" onMouseOver="on_head_fb_text()" onMouseOut="out_head_fb_text()"> <font face="myFbFont"> facebook </font> </a> </div>
 <!--Head fb text background-->
@@ -228,7 +228,7 @@ if(isset($_POST['file2']) && ($_POST['file2']=='Upload'))
 <!--Cover change dailog box-->
 <div style="display:none;" id="change_cover_pic_dailogbox"> 
 <div style="position:fixed; background:#3A3E41; opacity: 0.8; left:0%; top:0%; height:100%; width:100%; z-index:3"></div>
-<div style="position:fixed; background:#3B5998; left:30%; top:20%; height:10%; width:35%; z-index:3"></div>
+<div style="position:fixed; background:#FF1493; left:30%; top:20%; height:10%; width:35%; z-index:3"></div>
 <div style="position:fixed;  left:31%; top:22%; z-index:3">  <img src="background_file/background_icons/upload_profile_pic.png" height="45" width="50"> </div>
 <div style="position:fixed;  left:35%; top:19%; z-index:3">
 <h1 style="color:#FFFFFF;"> Upload Cover Picture </h1> </div>
@@ -260,7 +260,7 @@ if(isset($_POST['file2']) && ($_POST['file2']=='Upload'))
 <!--Cover pic add dailog box-->
 <div style="display:none;" id="upload_cover_pic_dailogbox"> 
 <div style="position:fixed; background:#3A3E41; opacity: 0.8;  left:0%; top:0%; height:100%; width:100%; z-index:3"></div>
-<div style="position:fixed; background:#3B5998; left:30%; top:20%; height:10%; width:35%; z-index:3"></div>
+<div style="position:fixed; background:#FF1493; left:30%; top:20%; height:10%; width:35%; z-index:3"></div>
 <div style="position:fixed;  left:31%; top:22%; z-index:3">  <img src="background_file/background_icons/upload_profile_pic.png" height="45" width="50"> </div>
 <div style="position:fixed;  left:35%; top:19%; z-index:3">
 <h1 style="color:#FFFFFF;"> Upload Cover Picture </h1> </div>
@@ -327,7 +327,7 @@ if(isset($_POST['file2']) && ($_POST['file2']=='Upload'))
 <!--Profile change dailog box-->
 <div style="display:none;" id="upload_pic"> 
 <div style="position:fixed; background:#3A3E41; opacity: 0.8; left:0%; top:0%; height:100%; width:100%; z-index:3"></div>
-<div style="position:fixed; background:#3B5998; left:30%; top:20%; height:10%; width:35%; z-index:3"></div>
+<div style="position:fixed; background:#FF1493; left:30%; top:20%; height:10%; width:35%; z-index:3"></div>
 <div style="position:fixed;  left:31%; top:22%; z-index:3">  <img src="background_file/background_icons/upload_profile_pic.png" height="45" width="50"> </div>
 <div style="position:fixed;  left:35%; top:19%; z-index:3">
 <h1 style="color:#FFFFFF;"> Upload Profile Picture </h1> </div>

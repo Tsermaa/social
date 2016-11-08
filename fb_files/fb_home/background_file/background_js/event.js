@@ -19,8 +19,8 @@ function head_pro_pic_over()
 }
 function head_pro_pic_out()
 {
-	document.getElementById("head_img").bgColor = "#3B5998";
-	document.getElementById("head_name_bg").bgColor = "#3B5998";
+	document.getElementById("head_img").bgColor = "#FF1493";
+	document.getElementById("head_name_bg").bgColor = "#FF1493";
 	document.getElementById("head_name_font").style.color = "#DEDEEF";	
 }
 function head_home_over()
@@ -30,7 +30,7 @@ function head_home_over()
 }
 function head_home_out()
 {
-	document.getElementById("head_home_bg").bgColor = "#3B5998";
+	document.getElementById("head_home_bg").bgColor = "#FF1493";
 	document.getElementById("head_home_font").style.color = "#DEDEEF";	
 }
 

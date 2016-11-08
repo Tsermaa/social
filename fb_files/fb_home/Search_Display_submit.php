@@ -46,7 +46,7 @@
 
 		<td bgcolor="#FFFFFF" style="padding-right:7;" id="Photo1<?php echo $uid ?>"> <a href="../fb_profile/Profile.php"> <img src="../../fb_users/<?php echo $gender; ?>/<?php echo $email; ?>/Profile/<?php echo $img; ?>" style="height:70; width:70;"> </a>  </td>
 		
-		<td onMouseOver="serched_name_over1(<?php echo $uid;?>)" onMouseOut="serched_name_out1(<?php echo $uid;?>)" width="500" bgcolor="#FFFFFF" id="Name_bg1<?php echo $uid; ?>"> <a href="../fb_profile/Profile.php" style=" text-decoration:none; text-transform:capitalize; color:#3B5998;" id="Name_font1<?php echo $uid;?>">  <?php echo $name; ?> (Me)</a></td>
+		<td onMouseOver="serched_name_over1(<?php echo $uid;?>)" onMouseOut="serched_name_out1(<?php echo $uid;?>)" width="500" bgcolor="#FFFFFF" id="Name_bg1<?php echo $uid; ?>"> <a href="../fb_profile/Profile.php" style=" text-decoration:none; text-transform:capitalize; color:#FF1493;" id="Name_font1<?php echo $uid;?>">  <?php echo $name; ?> (Me)</a></td>
 		
 		</tr>
 		<tr>
@@ -61,7 +61,7 @@
 
 		<td bgcolor="#FFFFFF" style="padding-right:7;" id="Photo1<?php echo $uid ?>"> <a href="../fb_view_profile/view_profile.php?id=<?php echo $uid; ?>"> <img src="../../fb_users/<?php echo $gender; ?>/<?php echo $email; ?>/Profile/<?php echo $img; ?>" style="height:70; width:70;"> </a>  </td>
 		
-		<td onMouseOver="serched_name_over1(<?php echo $uid;?>)" onMouseOut="serched_name_out1(<?php echo $uid;?>)" width="500" bgcolor="#FFFFFF" id="Name_bg1<?php echo $uid; ?>"> <a href="../fb_view_profile/view_profile.php?id=<?php echo $uid; ?>" style=" text-decoration:none; text-transform:capitalize; color:#3B5998;" id="Name_font1<?php echo $uid;?>">  <?php echo $name; ?></a></td>
+		<td onMouseOver="serched_name_over1(<?php echo $uid;?>)" onMouseOut="serched_name_out1(<?php echo $uid;?>)" width="500" bgcolor="#FFFFFF" id="Name_bg1<?php echo $uid; ?>"> <a href="../fb_view_profile/view_profile.php?id=<?php echo $uid; ?>" style=" text-decoration:none; text-transform:capitalize; color:#FF1493;" id="Name_font1<?php echo $uid;?>">  <?php echo $name; ?></a></td>
 		
 		</tr>
 		<tr>
@@ -83,8 +83,8 @@
 		<div style="position:absolute; left:22%; top:20%; background-color:#E2C822; height:8%; width:0.1%;"> </div>
 		<div style="position:absolute; left:22%; top:27.9%; background-color:#E2C822; height:0.2%; width:40%;"> </div>
 		<div style="position:absolute; left:62%; top:20%; background-color:#E2C822; height:8%; width:0.1%;"> </div>
-		<div style="position:absolute; left:23%; top:17.5%;"> <h4> No results found for your query. </h4> </div>
-		<div style="position:absolute; left:23%; top:24%; color:#808080;"> Check your spelling or try another term. </div>
+		<div style="position:absolute; left:23%; top:17.5%;"> <h4> солигдсон. </h4> </div>
+		<div style="position:absolute; left:23%; top:24%; color:#808080;"> Та өөрийн бүртэглээ устгахыг хүсч байна. </div>
 		
 	<?php	
 	}

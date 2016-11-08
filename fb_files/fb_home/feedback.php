@@ -28,7 +28,7 @@
 ?>
 <html>
 <head>
-<title> Feedback </title>
+<title> Санал </title>
 <style>
 #feedback_button
 {
@@ -75,7 +75,7 @@
 <body>
 	
 	<div style="position:absolute; left:25%; top:10%;"> <img src="img/icon-feedback.png"> </div>
-	<div style="position:absolute; left:35%; top:12%;"> <h1 style="color:#3B59A4;"> Feedback </h1> </div>
+	<div style="position:absolute; left:35%; top:12%;"> <h1 style="color:#3B59A4;"> Санал </h1> </div>
     <hr style="position:absolute;left:25%;top:25%;height:0.5%;width:50%; border-color:#CCCCCC; box-shadow:0px 5px 5px 0px rgb(0,0,0); ">
     
     <div style=" background:#0C6; position:absolute; left:25%; top:32%; height:24%; width:41.4%; z-index:-1; box-shadow:0px 2px 10px 1px rgb(0,0,0);"> </div>

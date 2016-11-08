@@ -4,7 +4,7 @@
 </head>
 <body>
 
-<div style="position:absolute;left:0;top:0; height:13%; width:100%; z-index:-1; background:#3B5998">   </div>
+<div style="position:absolute;left:0;top:0; height:13%; width:100%; z-index:-1; background:#FF1493">   </div>
 
 <div style="position:absolute;left:13.5%;top:2.5%;">  <a href="../../../index.php" style="text-decoration:none; font-size:50;font-weight:900; color:#FFFFFF;"> <font face="myFbFont"> faceback </font> </a> </div> </div>
 

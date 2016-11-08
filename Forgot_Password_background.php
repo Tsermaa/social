@@ -3,7 +3,7 @@
 ?>
 <html>
 <head>
-<LINK REL="SHORTCUT ICON" HREF="fb_files/fb_title_icon/Faceback.ico" />
+<LINK REL="SHORTCUT ICON" HREF="fb_files/fb_title_icon/Icon.png" />
 	<style>
 		#singup_button
 		{
@@ -23,8 +23,8 @@
 </head>
 <body>
 
-<div style="position:absolute;left:0%;top:0%; height:13.2%; width:100%; z-index:-1; background:#3B5998">   </div>
-<div style="position:absolute;left:13.5%; top:3.3%; font-size:45; font-weight:900; color:#FFFFFF; font-weight:bold;"> <font face="myFbFont">  3D Facebook </font> </div>
+<div style="position:absolute;left:0%;top:0%; height:13.2%; width:100%; z-index:-1; background:#FF1493">   </div>
+<div style="position:absolute;left:13.5%; top:3.3%; font-size:45; font-weight:900; color:#FFFFFF; font-weight:bold;"> <font face="myFbFont">  ШУТИС-МХТС </font> </div>
 
 
 

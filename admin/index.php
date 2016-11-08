@@ -67,7 +67,7 @@ if(isset($_POST['Login']))
 <body>
 
 <!--head background-->
-	<div style="position:absolute;left:0%;top:0%; height:13.2%; width:100%; z-index:-1; background:#3B5998">   </div>
+	<div style="position:absolute;left:0%;top:0%; height:13.2%; width:100%; z-index:-1; background:#FF1493">   </div>
 	<!--text: faceback -->
 	<div style="position:absolute;left:36%; top:3.3%; font-size:45; font-weight:900; color:#FFFFFF; font-weight:bold; box-shadow:0px -10px 20px 1px rgb(0,0,0);"> <font face="myFbFont"> facebook Admin </font> </div>
 	<!--body background-->
@@ -79,14 +79,14 @@ if(isset($_POST['Login']))
     
     <div style="position:absolute;left:60%;top:26%; height:60%; width:30%; background:#FFF; box-shadow:0px 0px 10px 3px rgb(21,57,147);">   </div>
     
-    <div style="position:absolute;left:70.5%; top:28%; font-size:45; font-weight:900; color:#3B5998; font-weight:bold;">  Login </div>
+    <div style="position:absolute;left:70.5%; top:28%; font-size:45; font-weight:900; color:#FF1493; font-weight:bold;">  Login </div>
     
      <div style="position:absolute;left:60%;top:39%; height:2%; width:30%; background:#0F3; box-shadow:0px 0px 10px 3px rgb(21,57,147);">   </div>
      
      <form  method="post">
-     <div style="position:absolute;left:62%; top:45%; font-size:25; font-weight:900; color:#3B5998; font-weight:bold;">  Username </div>
+     <div style="position:absolute;left:62%; top:45%; font-size:25; font-weight:900; color:#FF1493; font-weight:bold;">  Username </div>
      <div style="position:absolute; left:62%; top:50%;  "> <input type="text" name="username" style="width:350; height:40; font-size:20px;"/> </div>
-     <div style="position:absolute;left:62%; top:58%; font-size:25; font-weight:900; color:#3B5998; font-weight:bold;">  Password </div>
+     <div style="position:absolute;left:62%; top:58%; font-size:25; font-weight:900; color:#FF1493; font-weight:bold;">  Password </div>
      <div style="position:absolute;left:62%; top:63%; font-size:13px; "> <input type="password" name="password" style="width:350; height:40; font-size:20px;"> </div>
      <div style="position:absolute;left:80.5%;top:75%; ">  <input type="submit" name="Login" value="Log In" id="login_button" />  </div>
     </form>

@@ -49,7 +49,7 @@
 <body id="body">
 
 <!--Head background-->
-<div style="position:fixed;left:0;top:0; height:6%; width:100%; z-index:2; background:#3B5998">   </div>
+<div style="position:fixed;left:0;top:0; height:6%; width:100%; z-index:2; background:#FF1493">   </div>
 <!--Head fb text-->
 <div style="position:fixed;left:4.05%;top:0.8%;font-size:25;font-weight:900; z-index:3;"> <a href="../fb_home/Home.php" style="color:#FFFFFF; text-decoration:none;" onMouseOver="on_head_fb_text()" onMouseOut="out_head_fb_text()"> <font face="myFbFont"> facebook </font> </a> </div>
 <!--Head fb text background-->

@@ -6,20 +6,16 @@
 	</script>
 	<script src="background_file/background_js/submited_searched_reco_event.js"></script>
     <link href="../fb_font/font.css" rel="stylesheet" type="text/css">
-    <LINK REL="SHORTCUT ICON" HREF="../fb_title_icon/Faceback.ico" />
+    <LINK REL="SHORTCUT ICON" HREF="../fb_title_icon/Icon.png" />
 </head>
 <body>
 
 <!--Head background-->
-<div style="position:fixed;left:0;top:0; height:6%; width:100%; z-index:1; background:#3B5998">   </div>
+<div style="position:fixed;left:0;top:0; height:6%; width:100%; z-index:1; background:	#FF1493">   </div>
 <!--Head fb text-->
-<div style="position:fixed;left:4.05%;top:0.8%;font-size:25;font-weight:900; z-index:2;"> <a href="Home.php" style="color:#FFFFFF; text-decoration:none;" onMouseOver="on_head_fb_text()" onMouseOut="out_head_fb_text()"> <font face="myFbFont"> facebook </font> </a> </div>
+<div style="position:fixed;left:4.05%;top:0.8%;font-size:25;font-weight:900; z-index:2;"> <a href="Home.php" style="color:#FFFFFF; text-decoration:none;" onMouseOver="on_head_fb_text()" onMouseOut="out_head_fb_text()"> <font face="myFbFont"> ШУТИС-МХТС </font> </a> </div>
 <!--Head fb text background-->
 <div style="position:fixed;left:4%;top:1%; height:5%; width:8%; z-index:1; background:#4A63A5; display:none;" id="head_fb_text_backgraound">   </div>
-
-<div style="position:fixed; left:12.7%; top:1.6%; z-index:1;">  <img src="background_file/background_icons/request.jpg">  </div>
-<div style="position:fixed; left:14.7%; top:1.6%; z-index:1;"> <a href="Group_Message.php"> <img src="background_file/background_icons/messages.jpg"> </a> </div>
-<div style="position:fixed; left:16.7%; top:1.6%; z-index:1;">  <img src="background_file/background_icons/notifications.jpg">  </div>
 
 <script>
 	function bcheck()
@@ -67,7 +63,7 @@
 		
 		<td id="head_name_bg" onMouseOver="head_pro_pic_over()" onMouseOut="head_pro_pic_out()"> <a href="../fb_profile/Profile.php" id="head_name_font" style="color:#DEDEEF; font-size:12; font-weight:900;font-family:lucida Bright; text-transform:capitalize; text-decoration:none;"> &nbsp;  <?php echo $name; ?> &nbsp;</a> </td>
 		<td style="color:#DEDEEF;"> | </td>
-		<td id="head_home_bg" onMouseOver="head_home_over()" onMouseOut="head_home_out()"> <a href="Home.php" id="head_home_font" style="color:#DEDEEF; font-size:12; font-weight:900;font-family:lucida Bright; text-decoration:none;"> &nbsp; Home &nbsp; </a> </td>
+		<td id="head_home_bg" onMouseOver="head_home_over()" onMouseOut="head_home_out()"> <a href="Home.php" id="head_home_font" style="color:#DEDEEF; font-size:12; font-weight:900;font-family:lucida Bright; text-decoration:none;"> &nbsp; Нүүр &nbsp; </a> </td>
         <td style="color:#DEDEEF;">|</td>
 	</tr>
 	</table>
@@ -76,7 +72,7 @@
 <!--fb option-->
 <script src="background_file/background_js/options.js"></script>
 
-        <div style="position:fixed; left:97%; top:0.4%; z-index:1;"> <img src="background_file/background_icons/nexusae0_home_settings_icon2.png" height="35" width="35" onClick="open_option()"> </div>
+        <div style="position:fixed; left:97%; top:0.4%; z-index:1;"> <img src="background_file/background_icons/setings_icon.png" height="35" width="35" onClick="open_option()"> </div>
         
 <div style="display:none" id="option">
 
@@ -88,26 +84,26 @@
         <a href="../fb_profile/Profile.php"> <img src="img/timeline.png" width="16" height="16" onMouseOver="head_timeline_over()" onMouseOut="head_timeline_out()"></a>
         </div>
         <div style="position:fixed; left:88%; top:5%; z-index:3;">
-                 <a href="../fb_profile/Profile.php" style="text-decoration:none; color:#000;" id="head_timeline" onMouseOver="head_timeline_over()" onMouseOut="head_timeline_out()" ><h4>Timeline</h4></a> 
+                 <a href="../fb_profile/Profile.php" style="text-decoration:none; color:#000;" id="head_timeline" onMouseOver="head_timeline_over()" onMouseOut="head_timeline_out()" ><h4>Үйлдэл</h4></a> 
         </div>
         <div style="position:fixed; left:86%; top:13.5%; z-index:3;">
              <a href="../fb_profile/about.php"> <img src="img/about.png" onMouseOver="head_about_over()" onMouseOut="head_about_out()"> </a>
         </div> 
         <div style="position:fixed; left:88%; top:10%; z-index:3;">
-                <a href="../fb_profile/about.php" style="text-decoration:none; color:#000;" id="head_about" onMouseOver="head_about_over()" onMouseOut="head_about_out()"><h4>About</h4></a> 
+                <a href="../fb_profile/about.php" style="text-decoration:none; color:#000;" id="head_about" onMouseOver="head_about_over()" onMouseOut="head_about_out()"><h4>Мэдээлэл</h4></a> 
         </div>
         
         <div style="position:fixed; left:85.8%; top:18%; z-index:3;"> <a href="../fb_profile/photos.php"> <img src="img/photo&video.PNG" onMouseOver="head_photos_over()" onMouseOut="head_photos_out()"> </a> </div>
-<div style="position:fixed; left:88.2%; top:15%; z-index:3;"><a href="../fb_profile/photos.php" style="text-decoration:none; color:#000;" id="head_photos" onMouseOver="head_photos_over()" onMouseOut="head_photos_out()"><h4>Photos</h4></a></div>
+<div style="position:fixed; left:88.2%; top:15%; z-index:3;"><a href="../fb_profile/photos.php" style="text-decoration:none; color:#000;" id="head_photos" onMouseOver="head_photos_over()" onMouseOut="head_photos_out()"><h4>Зурагнууд</h4></a></div>
 
 	<div style="position:fixed; left:85.8%; top:23%; z-index:3;"> <a href="Settings.php"> <img src="img/settings2.png" height="25" width="23" onMouseOver="head_settings_over()" onMouseOut="head_settings_out()"> </a> </div>
-<div style="position:fixed; left:88.2%; top:20%; z-index:3;"><a href="Settings.php" style="text-decoration:none; color:#000;" id="head_settings" onMouseOver="head_settings_over()" onMouseOut="head_settings_out()"><h4> Account Settings </h4></a></div>
+<div style="position:fixed; left:88.2%; top:20%; z-index:3;"><a href="Settings.php" style="text-decoration:none; color:#000;" id="head_settings" onMouseOver="head_settings_over()" onMouseOut="head_settings_out()"><h4> Хэрэглэгчийн тохиргоо </h4></a></div>
 
 <div style="position:fixed; left:86.1%; top:27.5%; z-index:3;"> <a href="feedback.php"> <img src="background_file/background_icons/icon-feedback.png" height="20" width="20" onMouseOver="head_feedback_over()" onMouseOut="head_feedback_out()"> </a> </div>
-<div style="position:fixed; left:88.3%; top:24.5%; z-index:3;"><a href="feedback.php" style="text-decoration:none; color:#000;" id="head_feedback" onMouseOver="head_feedback_over()" onMouseOut="head_feedback_out()"><h4> Feedback </h4></a></div>
+<div style="position:fixed; left:88.3%; top:24.5%; z-index:3;"><a href="feedback.php" style="text-decoration:none; color:#000;" id="head_feedback" onMouseOver="head_feedback_over()" onMouseOut="head_feedback_out()"><h4> Санал </h4></a></div>
 
 <div style="position:fixed; left:86%; top:32.5%; z-index:3;"> <a href="../fb_logout/logout.php"> <img src="background_file/background_icons/logout.png" height="20" width="20"  onMouseOver="head_logout_over()" onMouseOut="head_logout_out()"> </a> </div>
-<div style="position:fixed; left:88.3%; top:29.1%; z-index:3;"><a href="../fb_logout/logout.php" style="text-decoration:none; color:#000;" id="head_logout" onMouseOver="head_logout_over()" onMouseOut="head_logout_out()"><h4> Logout </h4></a></div>
+<div style="position:fixed; left:88.3%; top:29.1%; z-index:3;"><a href="../fb_logout/logout.php" style="text-decoration:none; color:#000;" id="head_logout" onMouseOver="head_logout_over()" onMouseOut="head_logout_out()"><h4> Гарах </h4></a></div>
 </div>
            
         
@@ -126,34 +122,34 @@
 </div>
 
 <div style="position:fixed; left:7%; top:35.7%;"> <a href="Home.php"> <img src="img/News_Feed.PNG" onMouseOver="left_news_feed_over()" onMouseOut="left_news_feed_out()"> </a> </div>
-<div style="position:fixed; left:9%; top:33%;"> <a href="Home.php" style="text-decoration:none; color:#000;" id="news_feed" onMouseOver="left_news_feed_over()" onMouseOut="left_news_feed_out()"> <h4>News Feed</h4> </a></div>
+<div style="position:fixed; left:9%; top:33%;"> <a href="Home.php" style="text-decoration:none; color:#000;" id="news_feed" onMouseOver="left_news_feed_over()" onMouseOut="left_news_feed_out()"> <h4>Нийтлэгдсэн мэдээ</h4> </a></div>
 
 
 
 <div style="position:fixed; left:7.3%; top:40.6%;"> <a href="../fb_profile/Profile.php"> <img src="img/timeline.png" width="16" height="16" onMouseOver="left_timeline_over()" onMouseOut="left_timeline_out()"> </a> </div>
-<div style="position:fixed; left:9%; top:37.2%;"><a href="../fb_profile/Profile.php" style="text-decoration:none; color:#000;" id="timeline" onMouseOver="left_timeline_over()" onMouseOut="left_timeline_out()" ><h4>Timeline</h4></a></div>
+<div style="position:fixed; left:9%; top:37.2%;"><a href="../fb_profile/Profile.php" style="text-decoration:none; color:#000;" id="timeline" onMouseOver="left_timeline_over()" onMouseOut="left_timeline_out()" ><h4>Үйлдэл</h4></a></div>
 
 
 
 <div style="position:fixed; left:7.2%; top:45.3%;"><a href="../fb_profile/about.php"> <img src="img/about.png" onMouseOver="left_about_over()" onMouseOut="left_about_out()"> </a> </div>
-<div style="position:fixed; left:9%; top:41.8%;"><a href="../fb_profile/about.php" style="text-decoration:none; color:#000;" id="about" onMouseOver="left_about_over()" onMouseOut="left_about_out()"><h4>About</h4></a></div>
+<div style="position:fixed; left:9%; top:41.8%;"><a href="../fb_profile/about.php" style="text-decoration:none; color:#000;" id="about" onMouseOver="left_about_over()" onMouseOut="left_about_out()"><h4>Мэдээлэл</h4></a></div>
 
 
 
 <div style="position:fixed; left:7%; top:49.3%;"> <a href="../fb_profile/photos.php"> <img src="img/photo&video.PNG" onMouseOver="left_photos_over()" onMouseOut="left_photos_out()"> </a> </div>
-<div style="position:fixed; left:9%; top:46%;"><a href="../fb_profile/photos.php" style="text-decoration:none; color:#000;" id="photos" onMouseOver="left_photos_over()" onMouseOut="left_photos_out()"><h4>Photos</h4></a></div>
+<div style="position:fixed; left:9%; top:46%;"><a href="../fb_profile/photos.php" style="text-decoration:none; color:#000;" id="photos" onMouseOver="left_photos_over()" onMouseOut="left_photos_out()"><h4>Зурагнууд</h4></a></div>
 
 <div style="position:fixed; left:7%; top:53.2%;"> <a href="Group_Message.php"> <img src="img/group.png" height="25" width="23" onMouseOver="left_group_message_over()" onMouseOut="left_group_message_out()"> </a> </div>
-<div style="position:fixed; left:9%; top:50%;"><a href="Group_Message.php" style="text-decoration:none; color:#000;" id="group_message" onMouseOver="left_group_message_over()" onMouseOut="left_group_message_out()"><h4>Group Chat</h4></a></div>
+<div style="position:fixed; left:9%; top:50%;"><a href="Group_Message.php" style="text-decoration:none; color:#000;" id="group_message" onMouseOver="left_group_message_over()" onMouseOut="left_group_message_out()"><h4>Бүлгийн чат</h4></a></div>
 
 <div style="position:fixed; left:7%; top:57.6%;"> <a href="Settings.php"> <img src="img/settings2.png" height="25" width="23" onMouseOver="left_settings_over()" onMouseOut="left_settings_out()"> </a> </div>
-<div style="position:fixed; left:9%; top:54.2%;"><a href="Settings.php" style="text-decoration:none; color:#000;" id="settings" onMouseOver="left_settings_over()" onMouseOut="left_settings_out()"><h4>Settings</h4></a></div>
+<div style="position:fixed; left:9%; top:54.2%;"><a href="Settings.php" style="text-decoration:none; color:#000;" id="settings" onMouseOver="left_settings_over()" onMouseOut="left_settings_out()"><h4>Тохиргоо</h4></a></div>
 
 
 <!--left hr-->
-<hr style="position:fixed;left:18%;top:4.8%;height:100%;width:0; border-color:#CCCCCC; box-shadow:-5px 0px 5px 0px rgb(0,0,0);">
+<hr style="position:fixed;left:18%;top:4.8%;height:100%;width:0; border-color:#EE82EE; box-shadow:-5px 0px 5px 0px rgb(0,0,0);">
 <!--right hr-->
-<hr style="position:fixed;left:82%;top:4.8%;height:100%;width:0; border-color:#CCCCCC; box-shadow:5px 0px 5px 0px rgb(0,0,0);">
+<hr style="position:fixed;left:82%;top:4.8%;height:100%;width:0; border-color:#EE82EE; box-shadow:5px 0px 5px 0px rgb(0,0,0);">
 
 
 <!--Online-->
@@ -186,7 +182,7 @@
 	 if($online_count==0)
 	 {
 ?>
-		<div style="position:fixed; left:89%; top:8%; color:#FFF;"> Not found </div>
+		<div style="position:fixed; left:89%; top:8%; color:#FFF;"> Олдсонгүй </div>
 <?php
      }
 ?>

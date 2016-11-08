@@ -107,28 +107,28 @@
 	$photos_count=$photos_count+$count1+1;
 ?>
 
-<div style="position:absolute;left:31.5%; top:54%; font-weight:bold; z-index:1;">  Timeline  </div>
+<div style="position:absolute;left:31.5%; top:54%; font-weight:bold; z-index:1;">  Мэдээлэл  </div>
 <div style="position:absolute;left:37.1%; display:none; top:51%; height:9.8%; width:5.9%; background-color:#F6F7F8; z-index:1;" id="about_txt_background"> </div>
-<div style="position:absolute;left:38.3%; top:54%; font-weight:bold; z-index:1;"> <a href="about.php" style="text-decoration:none; color:#3B59B0;" onMouseOver="on_about_txt();" onMouseOut="out_about_txt();"> About </a>  </div>
+<div style="position:absolute;left:38.3%; top:54%; font-weight:bold; z-index:1;"> <a href="about.php" style="text-decoration:none; color:#FF1493;" onMouseOver="on_about_txt();" onMouseOut="out_about_txt();"> Тухай </a>  </div>
 <div style="position:absolute;left:43.1%; display:none; top:51%; height:9.8%; width:8.4%; background-color:#F6F7F8; z-index:1;" id="photos_txt_background"> </div>
-<div style="position:absolute;left:44.7%; top:54%; font-weight:bold; z-index:1; color:#3B59B0;"> <a href="photos.php" style="text-decoration:none; color:#3B59B0;" onMouseOver="on_photos_txt();" onMouseOut="out_photos_txt();">  Photos </a> <samp style="color:#717171;"> <?php echo $photos_count; ?> </samp> </div>
+<div style="position:absolute;left:44.7%; top:54%; font-weight:bold; z-index:1; color:#FF1493;"> <a href="photos.php" style="text-decoration:none; color:#FF1493;" onMouseOver="on_photos_txt();" onMouseOut="out_photos_txt();">  Зурагнууд </a> <samp style="color:#717171;"> <?php echo $photos_count; ?> </samp> </div>
 
 <!--Status-->
 <div style=" background:#FFFFFF; position:absolute; left:37.2%; top:65%; height:22%; width:41.4%; z-index:-1; box-shadow:0px 2px 5px 1px rgb(0,0,0);"> </div>
-<div style="position:absolute; left:37.2%; top:65%;"> <img src="img/Status.PNG"><input type="button" onClick="upload_close();"  value="Update Status" style="background:#FFFFFF; border:#FFFFFF;"> <img src="img/photo&video.PNG"><input type="button"  value="Add Photos" onClick="upload_open();" name="file" style="background:#FFFFFF; border:#FFFFFF;"></div>
+<div style="position:absolute; left:37.2%; top:65%;"> <img src="img/Status.PNG"><input type="button" onClick="upload_close();"  value="Статус шинэчлэх" style="background:#FFFFFF; border:#FFFFFF;"> <img src="img/photo&video.PNG"><input type="button"  value="Зураг нэмэх" onClick="upload_open();" name="file" style="background:#FFFFFF; border:#FFFFFF;"></div>
 <div style=" background:#F2F2F2; position:absolute; left:37.2%; top:85%; height:6.5%; width:41.4%; z-index:-1; "> </div>
 
 
 <form method="post" name="posting_txt" onSubmit="return blank_post_check();" id="post_txt">
 	
 	<div style="position:absolute; left:37.5%; top:69.5%;">
-		<textarea style="height:100; width:550;" name="post_txt" maxlength="511" placeholder="What's on your mind?"></textarea>
+		<textarea style="height:100; width:550;" name="post_txt" maxlength="511" placeholder="Та яг одоо юу бодож байна?"></textarea>
 	</div>	
     <input type="hidden" name="txt_post_time">
 	<div style="position:absolute; left:66%; top:86.9%;">
 	<select style="background: transparent; border-bottom:5px;" name="priority"> 
-<option value="Public"> Public </option> 
-<option value="Private"> Only me </option> 
+<option value="Public"> Нийтэд </option> 
+<option value="Private"> Зөвхөн надад </option> 
 	</select>
 	</div>
 	<div style="position:absolute; left:73%; top:86.5%;"> <input type="submit" value="post" name="txt" id="post_button" onClick="time_get()"> </div>
@@ -138,14 +138,14 @@
 	<form method="post" enctype="multipart/form-data" name="posting_pic1" style="display:none;" id="post_pic" onSubmit="return post_Img_check();">
 	
 	<div style="position:absolute; left:37.5%; top:69.5%;">
-		<textarea style="height:100; width:550;" name="post_txt" maxlength="511" placeholder="What's on your mind?" id="pic_post_txt1" ></textarea>
+		<textarea style="height:100; width:550;" name="post_txt" maxlength="511" placeholder="Та яг одоо юу бодож байна?" id="pic_post_txt1" ></textarea>
 	</div>
     <input type="hidden" name="pic_post_time"> 
 	<div style="position:absolute; left:38%; top:86.5%;"> <input type="file" name="file" id="post_img"> </div>
 	<div style="position:absolute; left:66%; top:86.9%;">
 	<select style="background: transparent; border-bottom:5px;" name="priority"> 
-<option value="Public"> Public </option> 
-<option value="Private"> Only me </option> 
+<option value="Public"> Нийтэд </option> 
+<option value="Private"> Зөвхөн надад </option> 
 	</select>
 	</div>
 	<div style="position:absolute; left:73%; top:86.5%;"> <input type="submit" value="post" name="file" id="post_button" onClick="time_get1()"> </div>
@@ -434,7 +434,7 @@
 		<form method="post">
 		<input type="hidden" name="postid" value="<?php echo $postid; ?>">
 		<input type="hidden" name="userid" value="<?php echo $userid; ?>">
-		<input type="submit" value="Unlike" name="Unlike" style="border:#FFFFFF; background:#FFFFFF; font-size:15px; color:#6D84C4;" onMouseOver="unlike_underLine(<?php echo $postid; ?>)" onMouseOut="unlike_NounderLine(<?php echo $postid; ?>)" id="unlike<?php echo $postid; ?>"></form></td>
+		<input type="submit" value="Таалагдаагүй" name="Unlike" style="border:#FFFFFF; background:#FFFFFF; font-size:15px; color:#6D84C4;" onMouseOver="unlike_underLine(<?php echo $postid; ?>)" onMouseOut="unlike_NounderLine(<?php echo $postid; ?>)" id="unlike<?php echo $postid; ?>"></form></td>
 			<?php
 			}
 			else
@@ -443,7 +443,7 @@
 		<form method="post">
 		<input type="hidden" name="postid" value="<?php echo $postid; ?>">
 		<input type="hidden" name="userid" value="<?php echo $userid; ?>">
-		<input type="submit" value="Like" name="Like" style="border:#FFFFFF; background:#FFFFFF; font-size:15px; color:#6D84C4;" onMouseOver="like_underLine(<?php echo $postid; ?>)" onMouseOut="like_NounderLine(<?php echo $postid; ?>)" id="like<?php echo $postid; ?>"></form></td>
+		<input type="submit" value="таалагдлаа" name="Like" style="border:#FFFFFF; background:#FFFFFF; font-size:15px; color:#6D84C4;" onMouseOver="like_underLine(<?php echo $postid; ?>)" onMouseOut="like_NounderLine(<?php echo $postid; ?>)" id="like<?php echo $postid; ?>"></form></td>
 			<?php
 			}
 		 ?>
@@ -453,12 +453,12 @@
 	$count_comment=mysql_num_rows($que_comment);
 		 ?>
 		
-		<td colspan="3"> &nbsp; <input type="button" value="Comment(<?php echo $count_comment; ?>)" style="background:#FFFFFF; border:#FFFFFF;font-size:15px; color:#6D84C4;" onClick="Comment_focus(<?php echo $postid; ?>);" onMouseOver="Comment_underLine(<?php echo $postid; ?>)" onMouseOut="Comment_NounderLine(<?php echo $postid; ?>)" id="comment<?php echo $postid; ?>">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <span style="color:#999999;">   <?php echo $post_data[4]; ?> </span> </td>
+		<td colspan="3"> &nbsp; <input type="button" value="Сэтгэгдэл(<?php echo $count_comment; ?>)" style="background:#FFFFFF; border:#FFFFFF;font-size:15px; color:#6D84C4;" onClick="Comment_focus(<?php echo $postid; ?>);" onMouseOver="Comment_underLine(<?php echo $postid; ?>)" onMouseOut="Comment_NounderLine(<?php echo $postid; ?>)" id="comment<?php echo $postid; ?>">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <span style="color:#999999;">   <?php echo $post_data[4]; ?> </span> </td>
 		<td>   </td>
 	</tr>
 	<tr>
 		<td>   </td>
-		<td  bgcolor="#EDEFF4" style="width:9;" colspan="3"><img src="img/like.PNG"><span style="color:#6D84C4;"><?php echo $count_like; ?></span> like this. </td>
+		<td  bgcolor="#EDEFF4" style="width:9;" colspan="3"><img src="img/like.PNG"><span style="color:#6D84C4;"><?php echo $count_like; ?></span> таалагдсан. </td>
 		<td> </td>
 		<td> </td>
 	</tr>
@@ -487,7 +487,7 @@
 	<tr>
 		<td> </td>
 		<td width="4%" bgcolor="#EDEFF4" style="padding-left:12;" rowspan="2">  <img src="../../fb_users/<?php echo $user_gender1; ?>/<?php echo $user_Email1; ?>/Profile/<?php echo $user_pic1; ?>" height="40" width="47">    </td>
-		<td bgcolor="#EDEFF4" style="padding-left:7;" > <a href="#" style="text-transform:capitalize; text-decoration:none; color:#3B5998;" onMouseOver="Comment_name_underLine(<?php echo $comment_id; ?>)" onMouseOut="Comment_name_NounderLine(<?php echo $comment_id; ?>)" id="cuname<?php echo $comment_id; ?>"> <?php echo $user_name1; ?></a> </td>
+		<td bgcolor="#EDEFF4" style="padding-left:7;" > <a href="#" style="text-transform:capitalize; text-decoration:none; color:#FF1493;" onMouseOver="Comment_name_underLine(<?php echo $comment_id; ?>)" onMouseOut="Comment_name_NounderLine(<?php echo $comment_id; ?>)" id="cuname<?php echo $comment_id; ?>"> <?php echo $user_name1; ?></a> </td>
 		<td align="right" rowspan="2" bgcolor="#EDEFF4"> 
 			<form method="post">  
 				<input type="hidden" name="comm_id" value="<?php echo $comment_id; ?>" >
@@ -746,13 +746,13 @@
 	<div style="position:absolute; left:16%; top:66%;"> <a href="about.php" style="color:#6A7480;text-decoration:none;font-size:17px; font-weight:bold;"> About </a> </div>
 	
 	<div style="position:absolute; left:15%; top:71.2%; background:#FFFFFF; height:25%; width:20%; z-index:-1; box-shadow:0px 2px 5px 0px rgb(0,0,0);"> </div>	
-	<div style="position:absolute;left:17%; top:74%; font-weight:bold;"> Basic Information </div>
-	<div style="position:absolute;left:17%; top:79%; font-size:15px; color:#89919C;">Birthday</div>
+	<div style="position:absolute;left:17%; top:74%; font-weight:bold;"> Үндсэн мэдээлэл</div>
+	<div style="position:absolute;left:17%; top:79%; font-size:15px; color:#89919C;">Төрсөн өдөр</div>
 	<div style="position:absolute;left:22%; top:79%; font-size:15px;"> <?php echo $user_bday; ?></div>
-	<div style="position:absolute;left:17%; top:83%; font-size:15px; color:#89919C;">Gender</div>
+	<div style="position:absolute;left:17%; top:83%; font-size:15px; color:#89919C;">Хүйс</div>
 	<div style="position:absolute;left:22%; top:83%; font-size:15px;"> <?php echo $gender; ?></div>
-	<div style="position:absolute;left:17%; top:87%; font-size:15px; color:#89919C;">Current location</div>
-	<div style="position:absolute;left:17%; top:91%; font-size:15px; color:#89919C;">Hometown</div>
+	<div style="position:absolute;left:17%; top:87%; font-size:15px; color:#89919C;">Хаяг</div>
+	<div style="position:absolute;left:17%; top:91%; font-size:15px; color:#89919C;">Оршин суугаа хаяг</div>
 <?php
 	$user_info_query=mysql_query("select * from user_info where user_id=$userid");
 	$user_info_data=mysql_fetch_array($user_info_query);
@@ -767,7 +767,7 @@
 	else
 	{
     ?>
-	<div style="position:absolute;left:25%; top:87%; font-size:15px;"> <a href="about.php" style="text-decoration:none; color:#3B59B0;"> Add Your City </a> </div>
+	<div style="position:absolute;left:25%; top:87%; font-size:15px;"> <a href="about.php" style="text-decoration:none; color:#FF1493;"> Байршил нэмэх </a> </div>
 	<?php
 	}
 ?>
@@ -781,7 +781,7 @@
 	else
 	{
     ?>
-		<div style="position:absolute;left:23%; top:91%; font-size:15px;"> <a href="about.php" style="text-decoration:none;color:#3B59B0;"> Add your hometown </a> </div>
+		<div style="position:absolute;left:23%; top:91%; font-size:15px;"> <a href="about.php" style="text-decoration:none;color:#FF1493;"> Оршин суугаа хот </a> </div>
 	<?php
 	}
 ?>
@@ -796,7 +796,7 @@
 	<div style="position:absolute; left:32%; top:101%;"> <img src="img/edit.PNG"> </div>
 	</div>
 	</a>	
-	<div style="position:absolute; left:16%; top:101%;"> <a href="photos.php" style="color:#6A7480;text-decoration:none;font-size:17px; font-weight:bold;"> Photos </a> </div>
+	<div style="position:absolute; left:16%; top:101%;"> <a href="photos.php" style="color:#6A7480;text-decoration:none;font-size:17px; font-weight:bold;"> Зурагнууд </a> </div>
 	
 	<div style="position:absolute; left:15%; top:106.2%; background:#FFFFFF; height:51.7%; width:20%; z-index:-1; box-shadow:0px 2px 5px 0px rgb(0,0,0);"> </div>	
 	

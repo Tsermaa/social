@@ -36,7 +36,7 @@
 			
 			<td bgcolor="#FFFFFF" style="padding-left:5;" id="Photo<?php echo $uid; ?>"> <a href="Profile.php">  <img src="../../fb_users/<?php echo $gender; ?>/<?php echo $email; ?>/Profile/<?php echo $img; ?>" style="height:70; width:70;"> </a> </td>
 			
-			<td width="500" bgcolor="#FFFFFF" id="Name_bg<?php echo $uid;?>"> <a href="Profile.php" style=" text-decoration:none; text-transform:capitalize; color:#3B5998;" id="Name_font<?php echo $uid;?>">  <?php echo $name; ?> (Me)</a></td>
+			<td width="500" bgcolor="#FFFFFF" id="Name_bg<?php echo $uid;?>"> <a href="Profile.php" style=" text-decoration:none; text-transform:capitalize; color:#FF1493;" id="Name_font<?php echo $uid;?>">  <?php echo $name; ?> (Me)</a></td>
 			
 				  
 			</tr>	
@@ -49,7 +49,7 @@
 			
 			<td bgcolor="#FFFFFF" style="padding-left:5;" id="Photo<?php echo $uid; ?>"> <a href="../fb_view_profile/view_profile.php?id=<?php echo $uid; ?>">  <img src="../../fb_users/<?php echo $gender; ?>/<?php echo $email; ?>/Profile/<?php echo $img; ?>" style="height:70; width:70;"> </a> </td>
 			
-			<td width="500" bgcolor="#FFFFFF" id="Name_bg<?php echo $uid;?>"> <a href="../fb_view_profile/view_profile.php?id=<?php echo $uid; ?>" style=" text-decoration:none; text-transform:capitalize; color:#3B5998;" id="Name_font<?php echo $uid;?>">  <?php echo $name; ?>  </a></td>
+			<td width="500" bgcolor="#FFFFFF" id="Name_bg<?php echo $uid;?>"> <a href="../fb_view_profile/view_profile.php?id=<?php echo $uid; ?>" style=" text-decoration:none; text-transform:capitalize; color:#FF1493;" id="Name_font<?php echo $uid;?>">  <?php echo $name; ?>  </a></td>
 			
 				  
 			</tr>	
@@ -59,7 +59,7 @@
 ?>
 		<tr>
 			
-			<td height="50" colspan="2" bgcolor="#F2F2F2" onMouseOver="see_more_over()" onMouseOut="see_more_out()" id="see_more"><a id="see_more_text" href="../fb_home/Search_Display_submit.php?search1=<?php echo $id; ?>" style="text-decoration:none; color:#3B5998;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; See more results &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
+			<td height="50" colspan="2" bgcolor="#F2F2F2" onMouseOver="see_more_over()" onMouseOut="see_more_out()" id="see_more"><a id="see_more_text" href="../fb_home/Search_Display_submit.php?search1=<?php echo $id; ?>" style="text-decoration:none; color:#FF1493;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Дэлгэрэнгүй харах &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
 		</tr>
 		</table>
 		</div>

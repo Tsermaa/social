@@ -30,7 +30,7 @@
 		$post_time=$_POST['pic_post_time'];
 		if($txt=="")
 		{
-			$txt="added a new photo.";
+			$txt="Шинэ зураг нэмлээ.";
 		}
 		if($gender=="Male")
 		{
@@ -89,7 +89,7 @@
 ?>
 <html>
 <head>
-<title>Home</title>
+<title>Нүүр</title>
 	<link href="Home_css/Home.css" rel="stylesheet" type="text/css">
 	<script src="Home_js/home.js" language="javascript"></script>
     <script>
@@ -124,7 +124,7 @@
 
 
 <div style="position:fixed; left:35%; top:8%; z-index:3;"> <img src="img/Warning_icon.png" height="100" width="100"></div>
-<div style="position:fixed; left:43%; top:8%; z-index:3; color:#971111; font-size:72px;">   warning  </div>
+<div style="position:fixed; left:43%; top:8%; z-index:3; color:#971111; font-size:72px;">   анхааруулах </div>
 
 <div style="position:fixed; left:20%; top:32%; color:#971111; font-size:20px; z-index:3;">  <?php echo $warning_txt; ?> 
 </div>
@@ -157,12 +157,12 @@
 
 
 <div style="position:fixed; left:39%; top:8%; z-index:3;"> <img src="img/Notice.png" height="100" width="100"></div>
-<div style="position:fixed; left:47%; top:12%; z-index:3; color:#3B59A4; font-size:48px;">   Notice  </div>
+<div style="position:fixed; left:47%; top:12%; z-index:3; color:#3B59A4; font-size:48px;">   Мэдэглэл  </div>
 
 <div style="position:fixed; left:20%; top:32%; font-size:20px; z-index:3;">  <?php echo $notice_txt; ?> 
 </div>
 
-<div style="position:fixed; left:62%; top:75%; font-size:20px; color:#999999; z-index:3;"> Notice Time: <?php echo $notice_time; ?> 
+<div style="position:fixed; left:62%; top:75%; font-size:20px; color:#999999; z-index:3;"> Мэдэгдлийн цаг: <?php echo $notice_time; ?> 
 </div>
 
 <form method="post">
@@ -180,7 +180,7 @@
 	
 	<!--Status-->
 	<div style=" background:#FFFFFF; position:absolute; left:21%; top:8%; height:22%; width:41.4%; z-index:-1; box-shadow:0px 2px 5px 1px rgb(0,0,0);"> </div>
-	<div style="position:absolute; left:21%; top:8%;"> <img src="img/Status.PNG"><input type="button" onClick="upload_close();"  value="Update Status" style="background:#FFFFFF; border:#FFFFFF;"> <img src="img/photo&video.PNG"><input type="button"  value="Add Photos" onClick="upload_open();" name="file" style="background:#FFFFFF; border:#FFFFFF;"></div>
+	<div style="position:absolute; left:21%; top:8%;"> <img src="img/Status.PNG"><input type="button" onClick="upload_close();"  value="Статус шинэчлэх" style="background:#FFFFFF; border:#FFFFFF;"> <img src="img/photo&video.PNG"><input type="button"  value="зураг нэмэх" onClick="upload_open();" name="file" style="background:#FFFFFF; border:#FFFFFF;"></div>
 <div style=" background:#F2F2F2; position:absolute; left:21%; top:26.5%; height:6.5%; width:41.4%; z-index:-1;"> </div>
 
  
@@ -188,28 +188,28 @@
 	<form method="post" name="posting_txt" onSubmit="return blank_post_check();" id="post_txt">
 	
 	<div style="position:absolute; left:21.3%; top:11.5%;">
-		<textarea style="height:100; width:550;" name="post_txt" maxlength="511" placeholder="What's on your mind?"></textarea>
+		<textarea style="height:100; width:550;" name="post_txt" maxlength="511" placeholder="Та яг одоо юу бодож байна?"></textarea>
         <input type="hidden" name="txt_post_time">
 	</div>	
 	<div style="position:absolute; left:50%; top:28.5%;">
 	<select style="background: transparent; border-bottom:5px;" name="priority"> 
-<option value="Public"> Public </option> 
-<option value="Private"> Only me </option> 
+<option value="Public"> Нийтэд </option> 
+<option value="Private"> Өөрт </option> 
 	</select> 
 	</div>
-	<div style="position:absolute; left:57%; top:28%;"> <input type="submit" value="post" name="txt" id="post_button" onClick="time_get()"> </div>
+	<div style="position:absolute; left:57%; top:28%;"> <input type="submit" value="Хуваалцах" name="txt" id="post_button" onClick="time_get()"> </div>
 	</form>
 	
 	<form method="post" enctype="multipart/form-data" name="posting_pic" style="display:none;" id="post_pic" onSubmit="return Img_check();">
 	
 	<div style="position:absolute; left:21.3%; top:11.5%;">
-		<textarea style="height:100; width:550;" name="post_txt" maxlength="511" placeholder="What's on your mind?"></textarea>
+		<textarea style="height:100; width:550;" name="post_txt" maxlength="511" placeholder="Та яг одоо юу бодож байна?"></textarea>
 	</div>
     <input type="hidden" name="pic_post_time">
 	<div style="position:absolute; left:50%; top:28.5%;">
 	<select style="background: transparent; border-bottom:5px;" name="priority"> 
-<option value="Public"> Public </option> 
-<option value="Private"> Only me </option> 
+<option value="Public"> Нийтэд </option> 
+<option value="Private"> Өөрт </option> 
 </select> </div>
 	<div style="position:absolute; left:22%; top:28.5%;"> <input type="file" name="file" id="img"> </div>
 	<div style="position:absolute; left:57%; top:28%;"> <input type="submit" value="post" name="file" id="post_button" onClick="time_get1()"> </div>
@@ -489,7 +489,7 @@
 		}
 	?>
 	
-	<tr style="color:#6D84C4;">
+	<tr style="color:Нийтэд;">
 		<td >   </td>
 		<?php
 		 	$que_status=mysql_query("select * from user_post_status where post_id=$postid and user_id=$userid;");
@@ -503,7 +503,7 @@
 		<form method="post">
 		<input type="hidden" name="postid" value="<?php echo $postid; ?>">
 		<input type="hidden" name="userid" value="<?php echo $userid; ?>">
-		<input type="submit" value="Unlike" name="Unlike" style="border:#FFFFFF; background:#FFFFFF; font-size:15px; color:#6D84C4;" onMouseOver="unlike_underLine(<?php echo $postid; ?>)" onMouseOut="unlike_NounderLine(<?php echo $postid; ?>)" id="unlike<?php echo $postid; ?>"></form></td>
+		<input type="submit" value="Unlike" name="Unlike" style="border:#FFFFFF; background:#FFFFFF; font-size:15px; color:#EE82EE;" onMouseOver="unlike_underLine(<?php echo $postid; ?>)" onMouseOut="unlike_NounderLine(<?php echo $postid; ?>)" id="unlike<?php echo $postid; ?>"></form></td>
 			<?php
 			}
 			else
@@ -512,7 +512,7 @@
 		<form method="post">
 		<input type="hidden" name="postid" value="<?php echo $postid; ?>">
 		<input type="hidden" name="userid" value="<?php echo $userid; ?>">
-		<input type="submit" value="Like" name="Like" style="border:#FFFFFF; background:#FFFFFF; font-size:15px; color:#6D84C4;" onMouseOver="like_underLine(<?php echo $postid; ?>)" onMouseOut="like_NounderLine(<?php echo $postid; ?>)" id="like<?php echo $postid; ?>"></form></td>
+		<input type="submit" value="Like" name="Like" style="border:#FFFFFF; background:#FFFFFF; font-size:15px; color:#EE82EE;" onMouseOver="like_underLine(<?php echo $postid; ?>)" onMouseOut="like_NounderLine(<?php echo $postid; ?>)" id="like<?php echo $postid; ?>"></form></td>
 			<?php
 			}
 		 ?>
@@ -522,12 +522,12 @@
 	$count_comment=mysql_num_rows($que_comment);
 		 ?>
 		
-		<td colspan="3"> &nbsp; <input type="button" value="Comment(<?php echo $count_comment; ?>)" style="background:#FFFFFF; border:#FFFFFF;font-size:15px; color:#6D84C4;" onClick="Comment_focus(<?php echo $postid; ?>);" onMouseOver="Comment_underLine(<?php echo $postid; ?>)" onMouseOut="Comment_NounderLine(<?php echo $postid; ?>)" id="comment<?php echo $postid; ?>"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <span style="color:#999999;">   <?php echo $post_data[4]; ?> </span> </td>
+		<td colspan="3"> &nbsp; <input type="button" value="Comment(<?php echo $count_comment; ?>)" style="background:#FFFFFF; border:#FFFFFF;font-size:15px; color:#EE82EE;" onClick="Comment_focus(<?php echo $postid; ?>);" onMouseOver="Comment_underLine(<?php echo $postid; ?>)" onMouseOut="Comment_NounderLine(<?php echo $postid; ?>)" id="comment<?php echo $postid; ?>"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <span style="color:#999999;">   <?php echo $post_data[4]; ?> </span> </td>
 		<td>   </td>
 	</tr>
 	<tr>
 		<td>   </td>
-		<td  bgcolor="#EDEFF4" style="width:9;" colspan="3"><img src="img/like.PNG"><span style="color:#6D84C4;"><?php echo $count_like; ?></span> like this. </td>
+		<td  bgcolor="#EDEFF4" style="width:9;" colspan="3"><img src="img/like.PNG"><span style="color:#EE82EE;"><?php echo $count_like; ?></span> like this. </td>
 		<td> </td>
 		<td> </td>
 	</tr>
@@ -554,7 +554,7 @@
 	<tr>
 		<td> </td>
 		<td width="4%" bgcolor="#EDEFF4" style="padding-left:12;" rowspan="2">  <img src="../../fb_users/<?php echo $user_gender1; ?>/<?php echo $user_Email1; ?>/Profile/<?php echo $user_pic1; ?>" height="40" width="47">    </td>
-		<td bgcolor="#EDEFF4" style="padding-left:7;" > <a href="../fb_view_profile/view_profile.php?id=<?php echo $comment_user_id; ?>" style="text-transform:capitalize; text-decoration:none; color:#3B5998;" onMouseOver="Comment_name_underLine(<?php echo $comment_id; ?>)" onMouseOut="Comment_name_NounderLine(<?php echo $comment_id; ?>)" id="cuname<?php echo $comment_id; ?>"> <?php echo $user_name1; ?></a> </td>
+		<td bgcolor="#EDEFF4" style="padding-left:7;" > <a href="../fb_view_profile/view_profile.php?id=<?php echo $comment_user_id; ?>" style="text-transform:capitalize; text-decoration:none; color:#FF1493;" onMouseOver="Comment_name_underLine(<?php echo $comment_id; ?>)" onMouseOut="Comment_name_NounderLine(<?php echo $comment_id; ?>)" id="cuname<?php echo $comment_id; ?>"> <?php echo $user_name1; ?></a> </td>
 	<?php
 		if($userid==$post_user_id)
 		{ ?>

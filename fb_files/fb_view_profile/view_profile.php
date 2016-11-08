@@ -53,9 +53,9 @@
 
 <div style="position:absolute;left:31.5%; top:54%; font-weight:bold; z-index:1;">  Timeline  </div>
 <div style="position:absolute;left:37.1%; display:none; top:51%; height:9.8%; width:5.9%; background-color:#F6F7F8; z-index:1;" id="about_txt_background"> </div>
-<div style="position:absolute;left:38.3%; top:54%; font-weight:bold; z-index:1;"> <a href="about.php?id=<?php echo $v_user_id; ?>" style="text-decoration:none; color:#3B59B0;" onMouseOver="on_about_txt();" onMouseOut="out_about_txt();"> About </a>  </div>
+<div style="position:absolute;left:38.3%; top:54%; font-weight:bold; z-index:1;"> <a href="about.php?id=<?php echo $v_user_id; ?>" style="text-decoration:none; color:#FF1493;" onMouseOver="on_about_txt();" onMouseOut="out_about_txt();"> About </a>  </div>
 <div style="position:absolute;left:43.1%; display:none; top:51%; height:9.8%; width:8.4%; background-color:#F6F7F8; z-index:1;" id="photos_txt_background"> </div>
-<div style="position:absolute;left:44.7%; top:54%; font-weight:bold; z-index:1; color:#3B59B0;"> <a href="photos.php?id=<?php echo $v_user_id; ?>" style="text-decoration:none; color:#3B59B0;" onMouseOver="on_photos_txt();" onMouseOut="out_photos_txt();">  Photos </a> <samp style="color:#717171;"> <?php echo $photos_count; ?> </samp> </div>
+<div style="position:absolute;left:44.7%; top:54%; font-weight:bold; z-index:1; color:#FF1493;"> <a href="photos.php?id=<?php echo $v_user_id; ?>" style="text-decoration:none; color:#FF1493;" onMouseOver="on_photos_txt();" onMouseOut="out_photos_txt();">  Photos </a> <samp style="color:#717171;"> <?php echo $photos_count; ?> </samp> </div>
 
 
 <?php
@@ -377,7 +377,7 @@
 	<tr>
 		<td> </td>
 		<td width="4%" bgcolor="#EDEFF4" style="padding-left:12;" rowspan="2">  <img src="../../fb_users/<?php echo $user_gender1; ?>/<?php echo $user_Email1; ?>/Profile/<?php echo $user_pic1; ?>" height="40" width="47">    </td>
-		<td bgcolor="#EDEFF4" style="padding-left:7;" > <a href="view_profile.php?id=<?php echo $comment_user_id; ?>" style="text-transform:capitalize; text-decoration:none; color:#3B5998;" onMouseOver="Comment_name_underLine(<?php echo $comment_id; ?>)" onMouseOut="Comment_name_NounderLine(<?php echo $comment_id; ?>)" id="cuname<?php echo $comment_id; ?>"> <?php echo $user_name1; ?></a> </td>
+		<td bgcolor="#EDEFF4" style="padding-left:7;" > <a href="view_profile.php?id=<?php echo $comment_user_id; ?>" style="text-transform:capitalize; text-decoration:none; color:#FF1493;" onMouseOver="Comment_name_underLine(<?php echo $comment_id; ?>)" onMouseOut="Comment_name_NounderLine(<?php echo $comment_id; ?>)" id="cuname<?php echo $comment_id; ?>"> <?php echo $user_name1; ?></a> </td>
 <?php	
         if($userid==$comment_user_id)
 		{ ?>
